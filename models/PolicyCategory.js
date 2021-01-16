@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const PolicyCategorySchema = mongoose.Schema({
-    categoryName: String
+    category_name: String
 });
 
 module.exports = mongoose.model('PolicyCategory', PolicyCategorySchema);

@@ -7,7 +7,9 @@ const userRoute = require('./routes/users');
 
 const app = express();
 
-dotenv.config({ path: './config/.env' })
+dotenv.config({ path: './config/.env' });
+
+app.use(express.json());
 app.use(morgan('dev'));
 connectDB();
 

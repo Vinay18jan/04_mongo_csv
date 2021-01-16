@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const PolicyCarrierSchema = mongoose.Schema({
-    companyName: String
+    company_name: String
 });
 
 module.exports = mongoose.model('PolicyCarrier', PolicyCarrierSchema);

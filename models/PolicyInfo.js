@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const PolicyInfoSchema = mongoose.Schema({
-    policyNumber: String,
-    policyStartDate: Date,
-    policyEndDate: Date,
+    policy_number: String,
+    policy_start_date: Date,
+    policy_end_date: Date,
     policyCategoryId: {
         type: mongoose.Schema.ObjectId,
         ref: 'PolicyCategory'
